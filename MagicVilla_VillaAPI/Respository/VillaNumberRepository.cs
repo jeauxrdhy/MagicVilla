@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 
 namespace MagicVilla_VillaAPI.Respository
 {
-    public class VillaNumberRepository : Repository<VillaNumber>, IVillaNumberRespository
+    public class VillaNumberRepository : Repository<VillaNumber>, IVillaNumberRepository
     {
         private readonly ApplicationDBContext _db;
 
