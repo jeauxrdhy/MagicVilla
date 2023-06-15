@@ -13,6 +13,7 @@ builder.Services.AddDbContext<ApplicationDBContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSqlConnection"));
 });
 builder.Services.AddScoped<IVillaRespository, VillaRepository>();
+builder.Services.AddScoped<IVillaNumberRespository, VillaNumberRepository>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 builder.Services.AddControllers(option =>
 {
